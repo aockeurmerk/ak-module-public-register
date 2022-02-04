@@ -1,0 +1,123 @@
+query getMy {
+  my {
+    Roles
+  }
+}
+
+query ExamDetails($examId: Int!) {
+  ExamDetails(input: { examId: $examId }) {
+    Cursus {
+      CursusID
+      CursusCode
+      Titel
+      Promotietekst
+      Sessies {
+        Datum
+        Begintijd
+        Eindtijd
+        Locatie {
+          Naam
+          Contactgegevens {
+            Adresregel1
+            Adresregel2
+            Huisnummer
+            HuisnummerToevoeging
+            Postcode
+            Woonplaats
+          }
+        }
+      }
+
+      Vak {
+        VakID
+        Competenties {
+          Naam
+        }
+        Inhoud
+        ExamenInstelling {
+          ExamenInstellingID
+          Naam
+        }
+        Vakgroep {
+          VakgroepID
+          Naam
+        }
+      }
+    }
+    Vaknorm {
+      VaknormID
+      Vaardigheden {
+        VaardigheidID
+        Code
+        Omschrijving
+      }
+    }
+  }
+}
+
+query ExamSpecialties($input: examSpecialtiesInput!) {
+  ExamSpecialties(input: $input) {
+    VakID
+    Titel
+    MinimumDatum
+    MaximumDatum
+  }
+}
+
+query ExamSpecialty($vakId: Int!) {
+  ExamSpecialty(vakId: $vakId) {
+    Vak {
+      VakID
+      Titel
+      Competenties {
+        Naam
+      }
+      Inhoud
+      Promotietekst
+      Doelgroep
+      Doelstelling
+    }
+    Vaknorm {
+      Vaardigheden {
+        VaardigheidID
+        Code
+        Omschrijving
+      }
+    }
+  }
+}
+
+query SearchPerson($Achternaam: SafeString, $Geboortedatum: Date, $PersoonID: Int) {
+  PersoonZoeken(Achternaam: $Achternaam, Geboortedatum: $Geboortedatum, PersoonID: $PersoonID) {
+    PersoonID
+    Achternaam
+    Geboortedatum
+  }
+}
+
+query StudyResults($PersoonID: Int!) {
+  Studieresultaten(PersoonID: $PersoonID) {
+    StudieresultaatID
+    Persoon {
+      Achternaam
+    }
+    Certificering {
+      Certificaat {
+        Naam
+      }
+      BeginDatum
+      EindDatum
+    }
+    Cursus {
+      Titel
+      Sessies {
+        Datum
+      }
+    }
+    Vak {
+      ExamenInstelling {
+        Naam
+      }
+    }
+  }
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html  lang="nl-NL">
+<head id="Head">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta name="REVISIT-AFTER" content="1 DAYS" />
+<meta name="RATING" content="GENERAL" />
+<meta name="RESOURCE-TYPE" content="DOCUMENT" />
+<meta content="text/javascript" http-equiv="Content-Script-Type" />
+<meta content="text/css" http-equiv="Content-Style-Type" />
+<title>
+	AOC Keurmerk 
+</title><meta id="MetaKeywords" name="KEYWORDS" content=",DotNetNuke,DNN" /><meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" />
+<link href="/default.css" type="text/css" rel="stylesheet"/>
+<link href="/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="/skin.css?cdv=433" type="text/css" rel="stylesheet"/>
+<link href="/container.css" type="text/css" rel="stylesheet"/>
+<link href="/Title_Blue.css?cdv=433" type="text/css" rel="stylesheet"/>
+<link href="/portal.css?cdv=433" type="text/css" rel="stylesheet"/>
+<!-- <link href="/WebResource.axd?d=hcXDZhXiidgP3NrbYp9dGfOLfSD7sLkNWeDvqI8XLa_MOtGwIs4vzs3ibA_0jAdWnSnRaHnZHauKX_pQC-u7L60tS3ebKPNXU1UgSibgofRgWBTqcepr4IePYkSTWkt7XkdLpQ2&amp;t=635857767569065523" type="text/css" rel="stylesheet" /> -->
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<script type="text/javascript">
+    window.ERKENNINGEN_GRAPHQL_API_URL = 'http://localhost:3030/graphql';
+    window.ERKENNINGEN_LOGIN_URL = 'https://administratie.aockeurmerk.nl/Default.aspx?tabid=154';
+    window.ERKENNINGEN_SITE_TYPE = 'administratie';
+    </script>
+
+</head>
+<body id="Body">
+
+<div class="container navbar-heighter">
+	<div class="navbar-brand">
+		<a id="dnn_dnnLOGO_hypLogo" title="AOC Keurmerk" href="https://aockeurmerk.nl/"><img id="dnn_dnnLOGO_imgLogo" src="/AOC-Keurmerk-wet-natuurbescherming-web.png" alt="AOC Keurmerk" /></a>
+	</div>
+	
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/">Home</a>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Dashboard">Dashboard</a>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Beheer<b class="caret"></b></a>
+    
+        <ul class="dropdown-menu">
+        
+	<li class="active">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Beheer/Gebruikers-zoeken">Gebruikers zoeken</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Beheer/Nieuwe-gebruiker-aanmaken">Nieuwe gebruiker aanmaken</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Beheer/Systeeminstellingen-wijzigen">Systeeminstellingen wijzigen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Beheer/Management-rapportage">Management rapportage</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Beheer/Attenderingen">Attenderingen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Beheer/Gebruiker-ontdubbelen">Gebruiker ontdubbelen</a>
+		
+	</li>
+	
+
+        </ul>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Vakken<b class="caret"></b></a>
+    
+        <ul class="dropdown-menu">
+        
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Vakken/Aanbieders-zoeken-en-maken">Aanbieders zoeken en maken</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Vakken/Vak-toevoegen">Vak toevoegen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Vakken/Vak-beheren">Vakken beheren</a>
+		
+	</li>
+	
+
+        </ul>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cursussen<b class="caret"></b></a>
+    
+        <ul class="dropdown-menu">
+        
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Cursussen/Cursuslocaties-beheren">Cursuslocaties beheren</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Cursussen/Locaties-samenvoegen">Locaties samenvoegen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Cursussen/Nieuwe-cursus-maken">Nieuwe cursus maken</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Cursussen/Cursus-wijzigen-en-deelnemers-terugmelden">Cursus wijzigen en deelnemers terugmelden</a>
+		
+	</li>
+	
+
+        </ul>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Examens<b class="caret"></b></a>
+    
+        <ul class="dropdown-menu">
+        
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Examens/Exameninstellingen">Exameninstellingen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Examens/Examen-aanmaken">Examen aanmaken</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Examens/Examenvakken-beheren">Examen beheren</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Examens/Examenlocaties-beheren">Examenlocaties beheren</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Examens/Examen-plannen">Examen plannen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Examens/Examenplanning-wijzigen">Examenplanning wijzigen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Examens/Examenkandidaten-aanmelden">Kandidaten aanmelden en examen downloaden</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Papieren-examendocumenten-downloaden">Papieren examendocumenten downloaden</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Examens/Examenresultaten-registeren">Examenresultaten registeren</a>
+		
+	</li>
+	
+
+        </ul>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inspectie<b class="caret"></b></a>
+    
+        <ul class="dropdown-menu">
+        
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Inspectie/Inspectie-plannen">Inspectie plannen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Inspectie/Inspecties-bekijken">Inspecties bekijken</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Inspectie/Inspectierapport-maken">Inspectierapport maken</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Inspectie/Rapporten-bekijken">Rapporten bekijken</a>
+		
+	</li>
+	
+
+        </ul>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Passen">Passen<b class="caret"></b></a>
+    
+        <ul class="dropdown-menu">
+        
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Beheer/Passen-export">Passen export</a>
+		
+	</li>
+	
+
+        </ul>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Factuur">Factuur</a>
+    
+    </li>
+
+    <li class="dropdown ">
+    
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Informatie<b class="caret"></b></a>
+    
+        <ul class="dropdown-menu">
+        
+	<li class="dropdown-submenu">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Informatie/Handleidingen">Handleidingen</a>
+		
+		<ul class="dropdown-menu">
+			
+	
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Informatie/Handleidingen/Regels-bij-certificering-via-een-examen">Regels bij certificering via  een examen</a>
+		
+	</li>
+
+		</ul>
+	
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Informatie/Meest-gestelde-vragen">Meest gestelde vragen</a>
+		
+	</li>
+	
+
+	<li class="">
+		
+        <a class="dropdown-toggle" href="https://aockeurmerk.nl/Openbaar-register">Openbaar register</a>
+		
+	</li>
+	
+
+        </ul>
+    
+    </li>
+
+</ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <a id="dnn_dnnLogin_loginLink" title="Uitloggen" class="LoginLink" rel="nofollow" href="https://aockeurmerk.nl/Beheer/Gebruikers-zoeken/ctl/Logoff">Uitloggen</a>
+
+                </li>
+                <li>
+                    <a id="dnn_dnnUser_registerLink" title="Bezoek mijn profiel" class="SkinObject" rel="nofollow" href="https://aockeurmerk.nl/Mijn-gegevens/userId/771960">A.G. de Groot</a>
+
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+    <!--/Logo-->
+
+    <div id="TopContent" class="row">
+        <div id="dnn_TopPane" class="col-md-12 DNNEmptyPane"></div>
+    </div>
+
+	<div id="TopSubContent" class="row">
+        <div id="dnn_TopLeftPane" class="col-md-9 DNNEmptyPane"></div>
+		<div id="dnn_TopRightPane" class="col-md-3 DNNEmptyPane"></div>
+    </div>
+	
+    <div id="Content" class="row">
+        <div id="dnn_ContentPane" class="col-md-12"><div class="DnnModule DnnModule-DNN_HTML DnnModule-557"><a name="557"></a>
+    </div>
+    <div class="c_footer">
+    </div>
+</div>
+</div><div class="DnnModule DnnModule-Gebruikers DnnModule-716"><a name="716"></a>
+<div class="c_container c_head_blue">
+ 
+    <div class="c_content">
+        <div id="dnn_ctr716_ContentPane" class="Normal c_contentpane">
+        <!-- Start_Module_716 --><div id="dnn_ctr716_ModuleContent" class="DNNModuleContent ModGebruikersC">
+            <div id="ak-module-public-register" class="module-entry"></div>
+</div><!-- End_Module_716 --></div>
+    </div>
+    <div class="c_footer">
+    </div>
+</div>
+</div>
+    <div id="MidContent" class="row">
+        <div id="dnn_ThirdRowLeft" class="col-md-4 DNNEmptyPane"></div>
+        <div id="dnn_ThirdRowMiddle" class="col-md-4 DNNEmptyPane"></div>
+        <div id="dnn_ThirdRowRight" class="col-md-4 DNNEmptyPane"></div>
+    </div>
+	<div id="MidContentLeftRight" class="row">
+        <div id="dnn_Left50" class="col-md-6 DNNEmptyPane"></div>
+        <div id="dnn_Right50" class="col-md-6 DNNEmptyPane"></div>
+    </div>
+    <div id="ContentLeftCol" class="row">
+        <div id="dnn_LeftPane" class="col-md-3 DNNEmptyPane"></div>
+        <div id="dnn_ContentPaneRight" class="col-md-6 DNNEmptyPane"></div>
+        <div id="dnn_RightPane" class="col-md-3 DNNEmptyPane"></div>
+    </div>
+
+    <div id="BottomContent" class="row">
+
+        <div id="dnn_BottomPane" class="col-md-12 DNNEmptyPane"></div>
+    </div>
+    <div id="FooterRow" class="row">
+
+        <div id="dnn_FooterRowLeft" class="col-md-4 DNNEmptyPane"></div>
+        <div id="dnn_FooterRowMiddle" class="col-md-4 DNNEmptyPane"></div>
+        <div id="dnn_FooterRowRight" class="col-md-4 DNNEmptyPane"></div>
+
+        <div id="dnn_FooterPane" class="col-md-12 DNNEmptyPane"></div>
+        <div id="CopyRightPane" class="SkinLink col-md-12 center">
+            <div class="col-md-12">
+                <span id="dnn_dnnCopyright_lblCopyright" class="SkinObject">Copyright 2015 (c) AOC Keurmerk</span>
+
+                <a id="dnn_dnnTerms_hypTerms" class="SkinObject" rel="nofollow" href="https://aockeurmerk.nl/Terms">Gebruiksovereenkomst</a>
+				<a href="/Privacybeleid">Privacybeleid</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</form>
+    
+</body>
+</html>
